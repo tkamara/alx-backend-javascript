@@ -1,7 +1,7 @@
 const assert = require('assert');
 const calculateNumber = require('./0-calcul');
 
-describe('calculateNumber', () =>
+describe('calculateNumber', () => {
   it('should return rounded sum', () => {
     assert.strictEqual(calculateNumber(1, 3), 4);
     assert.strictEqual(calculateNumber(1.6, 3), 5);
@@ -18,6 +18,7 @@ describe('calculateNumber', () =>
 
   it('should handle non-numbers', () => {
     assert.throws(() => {
-      calculateNumber(NaN, 2);
-    }, TypeError);
+      calculateNumber(NaN, 2), TypeError;
+      });
   });
+})
